@@ -131,3 +131,5 @@ items communicate via plain json data.
      every language
  - HOWL (**Hyperlinks on whatever you like**)
 ## Article mentioning that HATEAOS is REST LEVEL 3 (Here){https://techblog.commercetools.com/graphql-and-rest-level-3-hateoas-70904ff1f9cf}
+## Roy Fielding on how REST Api's should be hypertext-driven
+(Here)[https://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven#div-comment-724]
