@@ -114,3 +114,20 @@ items communicate via plain json data.
 - A server that presents a hypermedia API responding to network requests with
     hypermedia responses
 - A client that properly interprets the responses
+
+## Components of a Hypermedia System
+### Hypermedia
+- What makes hypermedia a hypermedia is the presence of hypermedia controls
+    (e.g. anchors, forms)
+- In the case of HTML these links specify the target of their operations using
+    URL (Uniform Resource Locator)
+    - URLs point to a resource
+    - URLs tell how a resource should retrieved
+### Hypermedia Servers
+ - Any server that can respond to an HTTP Request with an HTTP Response
+ - This gives great flexibility and freedom to chose the backend of the
+     application. 
+ - Could be anything, as since HTTP is so simple a server could be spun up in
+     every language
+ - HOWL (**Hyperlinks on whatever you like**)
+## Article mentioning that HATEAOS is REST LEVEL 3 (Here){https://techblog.commercetools.com/graphql-and-rest-level-3-hateoas-70904ff1f9cf}
