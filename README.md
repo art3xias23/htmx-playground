@@ -116,20 +116,73 @@ items communicate via plain json data.
 - A client that properly interprets the responses
 
 ## Components of a Hypermedia System
-### Hypermedia
+## Hypermedia
 - What makes hypermedia a hypermedia is the presence of hypermedia controls
     (e.g. anchors, forms)
 - In the case of HTML these links specify the target of their operations using
     URL (Uniform Resource Locator)
     - URLs point to a resource
     - URLs tell how a resource should retrieved
-### Hypermedia Servers
+## Hypermedia Servers
  - Any server that can respond to an HTTP Request with an HTTP Response
  - This gives great flexibility and freedom to chose the backend of the
      application. 
  - Could be anything, as since HTTP is so simple a server could be spun up in
      every language
  - HOWL (**Hyperlinks on whatever you like**)
-## Article mentioning that HATEAOS is REST LEVEL 3 (Here){https://techblog.commercetools.com/graphql-and-rest-level-3-hateoas-70904ff1f9cf}
-## Roy Fielding on how REST Api's should be hypertext-driven
+### Article mentioning that HATEAOS is REST LEVEL 3 (Here){https://techblog.commercetools.com/graphql-and-rest-level-3-hateoas-70904ff1f9cf}
+### Roy Fielding on how REST Api's should be hypertext-driven
 (Here)[https://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven#div-comment-724]
+
+## Hypermedia Clients
+- A good client is required to handle the hypermedia coming back from the
+    server.
+- ~~Building a good hypermedia client is hard!~~
+
+## REST
+### Constraints
+
+1. Client - Server
+2. Stateless
+3. Caching
+4. Uniform Interface (contains 4 sub-constraints)
+    4.1 Identification of Resource (URLs)
+    4.2 Manipulation of resources through representation
+      - Representation of resources is transfered between client and server
+      - Representation can contain data and metadata about requests ("control
+          data" like an HTTP method or response code)
+    4.3 Self-Descriptive Messages
+      - all information necessary to both display and also operate on the data being represented must be present in the response
+`{
+  "name": "Joe Smith",
+  "email": "joe@example.org",
+  "status": "Active"
+}`
+
+In the above case the clients needs to know exactly what each one of the items
+is an how to display them.
+
+`<html lang="en">
+<body>
+<h1>Joe Smith</h1>
+<div>
+    <div>Email: joe@example.bar</div>
+    <div>Status: Active</div>
+</div>
+<p>
+    <a href="/contacts/42/archive">Archive</a>
+</p>
+</body>
+</html>`
+
+In the above example the client only needs to be able to display the hypermedia
+controls. It does need to know what a contact is at all.
+
+    4.4 HATEOAS (Hypermedia As The Engine of Application State)
+        - The important point to notice here is that, by virtue of being a self-describing message, the HTML response now shows that the “Archive” operation is no longer available, and a new “Unarchive” operation has become available. The HTML representation of the contact encodes the state of the application; it encodes exactly what can and cannot be done with this particular representation, in a way that the JSON representation does not.
+
+5. Layered System constraint
+    - Could make use of Intermediary servers called Content Delivery Networks,
+        which will store data from the origin server in order to deliver it to a
+        client more closely positioned to the intermediary server than the
+        server
