@@ -1,4 +1,5 @@
-from flask import (Flask, redirect, render_template, request)
+from flask import (Flask, redirect, render_template, request, flash, jsonify,
+                   send_file)
 from contacts_model import (Contact)
 
 Contact.load_db()
@@ -32,6 +33,32 @@ def contacts_new():
     else:
         return render_template("new.html", contact=c)
 
+@app.route("/contacts/<contact_id>")
+def contacts_view(contact_id=0):
+    contact = Contact.find(contact_id)
+    return render_template("show.html", contact=contact)
+
+@app.route("/contacts/<contact_id>/edit", methods=["GET"])
+def contacts_edit_get(contact_id=0):
+    contact = Contact.find(contact_id)
+    return render_template("edit.html", contact=contact)
+
+@app.route("/contacts/<contact_id>/edit", methods=["POST"]) (1)
+def contacts_edit_post(contact_id=0):
+    c = Contact.find(contact_id) (2)
+    c.update(request.form['first_name'], request.form['last_name'], request.form['phone'], request.form['email']) (3)
+    if c.save(): (4)
+        flash("Updated Contact!")
+        return redirect("/contacts/" + str(contact_id)) (5)
+    else:
+        return render_template("edit.html", contact=c) (6)
+
+@app.route("/contacts/<contact_id>/delete", methods=["POST"]) (1)
+def contacts_delete(contact_id=0):
+    contact = Contact.find(contact_id)
+    contact.delete() (2)
+    flash("Deleted Contact!")
+    return redirect("/contacts") (3)
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')

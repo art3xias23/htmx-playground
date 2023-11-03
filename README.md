@@ -186,3 +186,12 @@ controls. It does need to know what a contact is at all.
         which will store data from the origin server in order to deliver it to a
         client more closely positioned to the intermediary server than the
         server
+
+
+
+
+Articles Read: 
+https://www.matuzo.at/blog/2023/single-page-applications-criticism
+https://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven#div-comment-724
+https://techblog.commercetools.com/graphql-and-rest-level-3-hateoas-70904ff1f9cf
+https://infrequently.org/2023/02/the-market-for-lemons/
