@@ -79,7 +79,7 @@ items communicate via plain json data.
 ## When not to use Hypermedia?
 - Online Spreadsheet
     - One cell change could trigger a chain of cascading changes
-       - Or even worse, could could occur on every keystroke
+       - Or even worse, could occur on every keystroke
     - Introducing a hypermedia-style server round trip on every cell change
     would hurt performance
     - However, hypermedia-transfer can still be used on a settings page and a
