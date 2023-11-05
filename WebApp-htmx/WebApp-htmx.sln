@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp-htmx", "WebApp-htmx\WebApp-htmx.csproj", "{B64DCE87-FE1C-4FCE-86FA-C0952A179CCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp-htmx", "WebApp-htmx.csproj", "{5D8D6BFA-4F1C-4505-B3EE-194ADA000F8D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B64DCE87-FE1C-4FCE-86FA-C0952A179CCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B64DCE87-FE1C-4FCE-86FA-C0952A179CCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B64DCE87-FE1C-4FCE-86FA-C0952A179CCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B64DCE87-FE1C-4FCE-86FA-C0952A179CCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D8D6BFA-4F1C-4505-B3EE-194ADA000F8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D8D6BFA-4F1C-4505-B3EE-194ADA000F8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D8D6BFA-4F1C-4505-B3EE-194ADA000F8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D8D6BFA-4F1C-4505-B3EE-194ADA000F8D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
