@@ -1,0 +1,18 @@
+﻿@model List<WebApp_htmx.DB.Contact>
+<table>
+    <tr>
+        <th>First</th>
+        <th>Last</th>
+        <th>Phone</th>
+        <th>Email</th>
+    </tr>
+    @foreach (var contact in Model)
+    {
+        <tr>
+            <td>@contact.First</td>
+            <td>@contact.Last</td>
+            <td>@contact.Phone</td>
+            <td>@contact.Email</td>
+        </tr>
+    }
+</table>
