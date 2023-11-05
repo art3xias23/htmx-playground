@@ -162,7 +162,8 @@ items communicate via plain json data.
 In the above case the clients needs to know exactly what each one of the items
 is an how to display them.
 
-`<html lang="en">
+`
+<html lang="en">
 <body>
 <h1>Joe Smith</h1>
 <div>
@@ -173,12 +174,13 @@ is an how to display them.
     <a href="/contacts/42/archive">Archive</a>
 </p>
 </body>
-</html>`
+</html>
+`
 
 In the above example the client only needs to be able to display the hypermedia
 controls. It does need to know what a contact is at all.
 
-    4.4 HATEOAS (Hypermedia As The Engine of Application State)
+4.4 HATEOAS (Hypermedia As The Engine of Application State)
         - The important point to notice here is that, by virtue of being a self-describing message, the HTML response now shows that the “Archive” operation is no longer available, and a new “Unarchive” operation has become available. The HTML representation of the contact encodes the state of the application; it encodes exactly what can and cannot be done with this particular representation, in a way that the JSON representation does not.
 
 5. Layered System constraint
@@ -187,8 +189,41 @@ controls. It does need to know what a contact is at all.
         client more closely positioned to the intermediary server than the
         server
 
+# Extending HTML with HTMX
+## HTML Could be extended to allow any element to issue a request to the server
+and act as a hypermedia control
+- As HTML only allows anchor tags and forms
+## HTML could be extended to allow any event - not just click (in hyperlinks) to
+trigger an HTTP request
+## HTML could be extended to allow the missing three HTTP methods PUT, PATCH,
+DELETE
+- HTML allows only GET and POST
+## HTML Could allow responses to requests to update elements within the entire
+document (a.k.a *_transclusion_*)
+- Currently updates the entire document
 
+# HTMX Cheatsheet
+- Example script for installing
+`
+<head>
+<script src="https://unpkg.com/htmx.org@1.9.2"
+        integrity="sha384-L6OqL9pRWyyFU3+/bjdSri+iIphTN/bvYyM37tICVyOJkWZLpP2vGn6VUEXgzg6h"
+        crossorigin="anonymous"></script>
 
+</head>
+`
+|-------------|--------------------|
+| Example     | htmx syntax        |
+|-------------|--------------------|
+| HTTP Get    | hx-get="/contacts" |
+|-------------|--------------------|
+| HTTP Post   | hx-post            |
+|-------------|--------------------|
+| HTTP Put    | hx-put             |
+|-------------|--------------------|
+| HTTP Patch  | hx-patch           |
+|-------------|--------------------|
+| HTTP Delete | hx-delete          |
 
 Articles Read: 
 https://www.matuzo.at/blog/2023/single-page-applications-criticism
