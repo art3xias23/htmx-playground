@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+KHlQ6GX0JSCLusYUSRrm5Qxyi0KxFpf6N05pCnveWfAbLx6vqFNKmRp8qQhU42yJ2VdcTSaN+idKAF7dYKAWQ==",
+  "dgSpecHash": "/Ht59sMNiH8wmhj1XxslaMwbS/c2AjAZwvPKAvy1sJ9TwullrokQDM8rGOzS+mxAkFC+dhTgnt0s8I0wrT7DRQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kmilchev\\Desktop\\Tino\\Code\\Web\\htmx-playground\\WebApp-htmx\\WebApp-htmx\\WebApp-htmx.csproj",
+  "projectFilePath": "C:\\Users\\kmilchev\\Desktop\\Tino\\Code\\Web\\htmx-playground\\WebApp-htmx\\WebApp-htmx.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kmilchev\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.13\\microsoft.data.sqlite.core.7.0.13.nupkg.sha512",
     "C:\\Users\\kmilchev\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.13\\microsoft.entityframeworkcore.7.0.13.nupkg.sha512",
