@@ -43,22 +43,22 @@ def contacts_edit_get(contact_id=0):
     contact = Contact.find(contact_id)
     return render_template("edit.html", contact=contact)
 
-@app.route("/contacts/<contact_id>/edit", methods=["POST"]) (1)
+@app.route("/contacts/<contact_id>/edit", methods=["POST"])
 def contacts_edit_post(contact_id=0):
     c = Contact.find(contact_id) (2)
-    c.update(request.form['first_name'], request.form['last_name'], request.form['phone'], request.form['email']) (3)
-    if c.save(): (4)
+    c.update(request.form['first_name'], request.form['last_name'], request.form['phone'], request.form['email'])
+    if c.save():
         flash("Updated Contact!")
-        return redirect("/contacts/" + str(contact_id)) (5)
+        return redirect("/contacts/" + str(contact_id))
     else:
-        return render_template("edit.html", contact=c) (6)
+        return render_template("edit.html", contact=c)
 
-@app.route("/contacts/<contact_id>/delete", methods=["POST"]) (1)
+@app.route("/contacts/<contact_id>/delete", methods=["POST"])
 def contacts_delete(contact_id=0):
     contact = Contact.find(contact_id)
-    contact.delete() (2)
+    contact.delete()
     flash("Deleted Contact!")
-    return redirect("/contacts") (3)
+    return redirect("/contacts")
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
