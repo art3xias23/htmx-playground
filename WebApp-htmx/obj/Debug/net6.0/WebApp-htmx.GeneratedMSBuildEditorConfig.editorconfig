@@ -15,8 +15,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\kmilchev\Desktop\Tino\Code\Web\htmx-playground\WebApp-htmx
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/kmilchev/Desktop/Tino/Code/Web/htmx-playground/WebApp-htmx/Views/Contacts/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdHNcSW5kZXguY3NodG1s
+[C:/Users/kmilchev/Desktop/Tino/Code/Web/htmx-playground/WebApp-htmx/Views/Examples/Dog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbXBsZXNcRG9nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kmilchev/Desktop/Tino/Code/Web/htmx-playground/WebApp-htmx/Views/Examples/Get.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbXBsZXNcR2V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kmilchev/Desktop/Tino/Code/Web/htmx-playground/WebApp-htmx/Views/Examples/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbXBsZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/kmilchev/Desktop/Tino/Code/Web/htmx-playground/WebApp-htmx/Views/Home/Index.cshtml]

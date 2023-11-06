@@ -70,6 +70,9 @@ C:\Users\kmilchev\Desktop\Tino\Code\Web\htmx-playground\WebApp-htmx\WebApp-htmx\
 C:\Users\kmilchev\Desktop\Tino\Code\Web\htmx-playground\WebApp-htmx\WebApp-htmx\obj\Debug\net6.0\WebApp-htmx.pdb
 C:\Users\kmilchev\Desktop\Tino\Code\Web\htmx-playground\WebApp-htmx\WebApp-htmx\obj\Debug\net6.0\WebApp-htmx.genruntimeconfig.cache
 C:\Users\kmilchev\Desktop\Tino\Code\Web\htmx-playground\WebApp-htmx\WebApp-htmx\obj\Debug\net6.0\ref\WebApp-htmx.dll
+C:\Users\kmilchev\Desktop\Tino\Code\Web\htmx-playground\WebApp-htmx\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\kmilchev\Desktop\Tino\Code\Web\htmx-playground\WebApp-htmx\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\kmilchev\Desktop\Tino\Code\Web\htmx-playground\WebApp-htmx\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\kmilchev\Desktop\Tino\Code\Web\htmx-playground\WebApp-htmx\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\kmilchev\Desktop\Tino\Code\Web\htmx-playground\WebApp-htmx\bin\Debug\net6.0\appsettings.json
 C:\Users\kmilchev\Desktop\Tino\Code\Web\htmx-playground\WebApp-htmx\bin\Debug\net6.0\WebApp-htmx.staticwebassets.runtime.json
@@ -81,7 +84,6 @@ C:\Users\kmilchev\Desktop\Tino\Code\Web\htmx-playground\WebApp-htmx\bin\Debug\ne
 C:\Users\kmilchev\Desktop\Tino\Code\Web\htmx-playground\WebApp-htmx\bin\Debug\net6.0\Microsoft.Data.Sqlite.dll
 C:\Users\kmilchev\Desktop\Tino\Code\Web\htmx-playground\WebApp-htmx\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\kmilchev\Desktop\Tino\Code\Web\htmx-playground\WebApp-htmx\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\kmilchev\Desktop\Tino\Code\Web\htmx-playground\WebApp-htmx\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\kmilchev\Desktop\Tino\Code\Web\htmx-playground\WebApp-htmx\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Sqlite.dll
 C:\Users\kmilchev\Desktop\Tino\Code\Web\htmx-playground\WebApp-htmx\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
 C:\Users\kmilchev\Desktop\Tino\Code\Web\htmx-playground\WebApp-htmx\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
@@ -92,8 +94,6 @@ C:\Users\kmilchev\Desktop\Tino\Code\Web\htmx-playground\WebApp-htmx\bin\Debug\ne
 C:\Users\kmilchev\Desktop\Tino\Code\Web\htmx-playground\WebApp-htmx\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
 C:\Users\kmilchev\Desktop\Tino\Code\Web\htmx-playground\WebApp-htmx\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\kmilchev\Desktop\Tino\Code\Web\htmx-playground\WebApp-htmx\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
-C:\Users\kmilchev\Desktop\Tino\Code\Web\htmx-playground\WebApp-htmx\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
-C:\Users\kmilchev\Desktop\Tino\Code\Web\htmx-playground\WebApp-htmx\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\kmilchev\Desktop\Tino\Code\Web\htmx-playground\WebApp-htmx\bin\Debug\net6.0\SQLitePCLRaw.batteries_v2.dll
 C:\Users\kmilchev\Desktop\Tino\Code\Web\htmx-playground\WebApp-htmx\bin\Debug\net6.0\SQLitePCLRaw.core.dll
 C:\Users\kmilchev\Desktop\Tino\Code\Web\htmx-playground\WebApp-htmx\bin\Debug\net6.0\SQLitePCLRaw.provider.e_sqlite3.dll

@@ -1,0 +1,48 @@
+﻿<div id="replace-me">
+    <div class="my-box">
+        <h2>1. Get contacts Replace button</h2>
+        <p>Simple use of the hx-get attribute. It replaces the button element (transclusion)</p>
+        <button hx-get="/examples/get" n>Get Contacts</button>
+    </div>
+
+    <div class="my-box">
+        <h2>2. Get contacts Replace page</h2>
+        <p>Same use of hx-get, however replacing entire page instead of just element.</p>
+        <button hx-get="/examples/get" hx-target="#replace-me" hx-swap="outerHtml">Get Contacts</button>
+    </div>
+
+    <div class="my-box">
+        <h2>3. Get contacts, Replace page, Keep History</h2>
+        <p>Same use of hx-get, however replacing entire page instead of just element. Keeping History.</p>
+        <button hx-get="/examples/get" hx-target="#replace-me" hx-url-push="true">Get Contacts</button>
+    </div>
+
+    <div class="my-box">
+        <h2>4. Get contacts, Replace page (Inner Html), Keep History</h2>
+        <p>Same use of hx-get, however replacing entire page instead of just element. Keeping History. However, the Layout will be copied as we are replacing only the Inner HTML</p>
+        <button hx-get="/examples/get" hx-target="#replace-me" hx-url-push="true" hx-swap="innerHtml">Get Contacts</button>
+    </div>
+
+    <div class="my-box">
+        <h2>5. Get contacts, Replace page (Outer Html), Keep History</h2>
+        <p>
+            Same use of hx-get, however replacing entire page instead of just element.
+            Keeping History.
+            However, the Layout will NOT be copied as we are replacing Outer HTML
+        </p>
+        <button hx-get="/examples/get" hx-target="#replace-me" hx-url-push="true" hx-swap="outerHtml">Get Contacts</button>
+    </div>
+
+    <div class="my-box" id="dog-outer-box">
+        <h2>6. Events</h2>
+        <p>Using events to show the definition of dog.</p>
+        <div id="dog-stuff">
+            <p class="dog-name" hx-get="" hx-trigger="mouseleave" hx-target="#dog-stuff" hx-swap="innerHtml">
+                Dog
+            </p>
+            <p class="dog-name" hx-get="" hx-trigger="mouseenter" hx-target="#dog-stuff" hx-swap="innerHtml">
+                A dog is a loyal and friendly domesticated animal that people keep as pets and companions.
+            </p>
+        </div>
+    </div>
+</div>

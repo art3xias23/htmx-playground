@@ -29,8 +29,18 @@ app.MapControllerRoute(
 
 app.MapControllerRoute(
     name: "contacts",
-    pattern: "/contacts",
-    defaults: new { controller = "Contacts", action = "Index" });
+    pattern: "/examples",
+    defaults: new { controller = "Examples", action = "Index" });
+
+app.MapControllerRoute(
+    name: "contacts",
+    pattern: "/examples/get",
+    defaults: new { controller = "Examples", action = "Get" });
+
+app.MapControllerRoute(
+    name: "contacts",
+    pattern: "/examples/dog",
+    defaults: new { controller = "Examples", action = "Dog" });
 
 using (var scope = app.Services.CreateScope())
 {

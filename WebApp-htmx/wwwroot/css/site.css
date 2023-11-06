@@ -16,3 +16,11 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.my-box {
+    background-color: lightgrey;
+    width: 600px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+}
