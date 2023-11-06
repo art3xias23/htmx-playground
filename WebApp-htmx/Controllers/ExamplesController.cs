@@ -3,7 +3,7 @@ using WebApp_htmx.DB;
 
 namespace WebApp_htmx.Controllers
 {
-    public class ExamplesController :Controller
+    public class ExamplesController : Controller
     {
         public IActionResult Index()
         {
@@ -34,6 +34,17 @@ namespace WebApp_htmx.Controllers
             var contact = contacts.First(x => x.Id == id);
             contact.Error = "Some Server Error";
             return View("Error1");
+        }
+
+        [Route("/examples/more")]
+        [HttpGet]
+        public IActionResult MoreContacts(int count)
+        {
+            var repo = new Repo();
+            var next20Contacts = repo.GetAll().Skip(count).Take(10).ToList();
+            return PartialView("Get", next20Contacts);
+
+
         }
     }
 }
