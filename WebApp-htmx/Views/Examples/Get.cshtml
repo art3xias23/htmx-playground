@@ -15,7 +15,15 @@
             <td>@contact.First</td>
             <td>@contact.Last</td>
             <td>@contact.Phone</td>
-            <td>@contact.Email</td>
+            <td>
+                <input name="email" id="email" 
+                       hx-get="/examples/@contact.Id/email"
+                       hx-target="#error" 
+                       hx-trigger="change, keyup"
+                       value="@contact.Email"
+                       />
+                <span id="error">@contact.Error</span>
+            </td>
         </tr>
     }
 </table>

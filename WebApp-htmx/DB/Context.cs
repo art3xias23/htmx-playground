@@ -33,6 +33,230 @@ namespace WebApp_htmx.DB
                         Phone = 1234567890,
                         Email = "brian@example.com",
                     },
+                    new Contact
+                    {
+                        First = "John",
+                        Last = "Doe",
+                        Phone = 1234567890,
+                        Email = "john@example.com",
+                    },
+                    new Contact
+                    {
+                        First = "Brian",
+                        Last = "Adams",
+                        Phone = 1234567890,
+                        Email = "brian@example.com",
+                    },
+                    new Contact
+                    {
+                        First = "John",
+                        Last = "Doe",
+                        Phone = 1234567890,
+                        Email = "john@example.com",
+                    },
+                    new Contact
+                    {
+                        First = "Brian",
+                        Last = "Adams",
+                        Phone = 1234567890,
+                        Email = "brian@example.com",
+                    },
+                    new Contact
+                    {
+                        First = "John",
+                        Last = "Doe",
+                        Phone = 1234567890,
+                        Email = "john@example.com",
+                    },
+                    new Contact
+                    {
+                        First = "Brian",
+                        Last = "Adams",
+                        Phone = 1234567890,
+                        Email = "brian@example.com",
+                    },
+                    new Contact
+                    {
+                        First = "John",
+                        Last = "Doe",
+                        Phone = 1234567890,
+                        Email = "john@example.com",
+                    },
+                    new Contact
+                    {
+                        First = "Brian",
+                        Last = "Adams",
+                        Phone = 1234567890,
+                        Email = "brian@example.com",
+                    },
+                    new Contact
+                    {
+                        First = "John",
+                        Last = "Doe",
+                        Phone = 1234567890,
+                        Email = "john@example.com",
+                    },
+                    new Contact
+                    {
+                        First = "Brian",
+                        Last = "Adams",
+                        Phone = 1234567890,
+                        Email = "brian@example.com",
+                    },
+                    new Contact
+                    {
+                        First = "John",
+                        Last = "Doe",
+                        Phone = 1234567890,
+                        Email = "john@example.com",
+                    },
+                    new Contact
+                    {
+                        First = "Brian",
+                        Last = "Adams",
+                        Phone = 1234567890,
+                        Email = "brian@example.com",
+                    },
+                    new Contact
+                    {
+                        First = "John",
+                        Last = "Doe",
+                        Phone = 1234567890,
+                        Email = "john@example.com",
+                    },
+                    new Contact
+                    {
+                        First = "Brian",
+                        Last = "Adams",
+                        Phone = 1234567890,
+                        Email = "brian@example.com",
+                    },
+                    new Contact
+                    {
+                        First = "John",
+                        Last = "Doe",
+                        Phone = 1234567890,
+                        Email = "john@example.com",
+                    },
+                    new Contact
+                    {
+                        First = "Brian",
+                        Last = "Adams",
+                        Phone = 1234567890,
+                        Email = "brian@example.com",
+                    },
+                    new Contact
+                    {
+                        First = "John",
+                        Last = "Doe",
+                        Phone = 1234567890,
+                        Email = "john@example.com",
+                    },
+                    new Contact
+                    {
+                        First = "Brian",
+                        Last = "Adams",
+                        Phone = 1234567890,
+                        Email = "brian@example.com",
+                    },
+                    new Contact
+                    {
+                        First = "John",
+                        Last = "Doe",
+                        Phone = 1234567890,
+                        Email = "john@example.com",
+                    },
+                    new Contact
+                    {
+                        First = "Brian",
+                        Last = "Adams",
+                        Phone = 1234567890,
+                        Email = "brian@example.com",
+                    },
+                    new Contact
+                    {
+                        First = "John",
+                        Last = "Doe",
+                        Phone = 1234567890,
+                        Email = "john@example.com",
+                    },
+                    new Contact
+                    {
+                        First = "Brian",
+                        Last = "Adams",
+                        Phone = 1234567890,
+                        Email = "brian@example.com",
+                    },
+                    new Contact
+                    {
+                        First = "John",
+                        Last = "Doe",
+                        Phone = 1234567890,
+                        Email = "john@example.com",
+                    },
+                    new Contact
+                    {
+                        First = "Brian",
+                        Last = "Adams",
+                        Phone = 1234567890,
+                        Email = "brian@example.com",
+                    },
+                    new Contact
+                    {
+                        First = "John",
+                        Last = "Doe",
+                        Phone = 1234567890,
+                        Email = "john@example.com",
+                    },
+                    new Contact
+                    {
+                        First = "Brian",
+                        Last = "Adams",
+                        Phone = 1234567890,
+                        Email = "brian@example.com",
+                    },
+                    new Contact
+                    {
+                        First = "John",
+                        Last = "Doe",
+                        Phone = 1234567890,
+                        Email = "john@example.com",
+                    },
+                    new Contact
+                    {
+                        First = "Brian",
+                        Last = "Adams",
+                        Phone = 1234567890,
+                        Email = "brian@example.com",
+                    },
+                    new Contact
+                    {
+                        First = "John",
+                        Last = "Doe",
+                        Phone = 1234567890,
+                        Email = "john@example.com",
+                    },
+                    new Contact
+                    {
+                        First = "Brian",
+                        Last = "Adams",
+                        Phone = 1234567890,
+                        Email = "brian@example.com",
+                    },
+                    new Contact
+                    {
+                        First = "John",
+                        Last = "Doe",
+                        Phone = 1234567890,
+                        Email = "john@example.com",
+                    },
+                    new Contact
+                    {
+                        First = "Brian",
+                        Last = "Adams",
+                        Phone = 1234567890,
+                        Email = "brian@example.com",
+                    }
                 };
 
                 context.Contacts.AddRange(initialContacts);
