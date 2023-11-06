@@ -4,27 +4,31 @@
 @model List<WebApp_htmx.DB.Contact>
 <div class="main">
     <table>
-        <tr>
-            <th>First</th>
-            <th>Last</th>
-            <th>Phone</th>
-            <th>Email</th>
-        </tr>
-        @foreach (var contact in Model)
-        {
+        <thead>
             <tr>
-                <td>@contact.First</td>
-                <td>@contact.Last</td>
-                <td>@contact.Phone</td>
-                <td>
-                    <input name="email" id="email"
-                       hx-get="/examples/@contact.Id/email"
-                       hx-target="#error"
-                       hx-trigger="change, keyup"
-                       value="@contact.Email" />
-                    <span id="error">@contact.Error</span>
-                </td>
+                <th>First</th>
+                <th>Last</th>
+                <th>Phone</th>
+                <th>Email</th>
             </tr>
-        }
+        </thead>
+        <tbody>
+            @foreach (var contact in Model)
+            {
+                <tr>
+                    <td>@contact.First</td>
+                    <td>@contact.Last</td>
+                    <td>@contact.Phone</td>
+                    <td>
+                        <input name="email" id="email"
+                           hx-get="/examples/@contact.Id/email"
+                           hx-target="#error"
+                           hx-trigger="change, keyup"
+                           value="@contact.Email" />
+                        <span id="error">@contact.Error</span>
+                    </td>
+                </tr>
+            }
+        </tbody>
     </table>
 </div>
