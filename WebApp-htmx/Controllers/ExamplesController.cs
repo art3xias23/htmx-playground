@@ -48,18 +48,23 @@ namespace WebApp_htmx.Controllers
         {
             var repo = new Repo();
             var next20Contacts = repo.GetAll().Skip(count).Take(10).ToList();
-            return View("GetMore", new Tuple<List<Contact>, int>(next20Contacts, count+10));
+            return View("GetMore", new Tuple<List<Contact>, int>(next20Contacts, count + 10));
         }
 
-        
+
         [Route("/examples/infinite")]
         [HttpGet]
         public async Task<IActionResult> InfiniteContacts(int count)
         {
             var repo = new Repo();
             var next20Contacts = repo.GetAll().Skip(count).Take(5).ToList();
-            await Task.Delay(5);
-            return View("GetInfinite", new Tuple<List<Contact>, int>(next20Contacts, count+5));
+            if (next20Contacts.Count > 0)
+            {
+                await (count == 0 ?  Task.Delay(0): Task.Delay(500));
+                return View("GetInfinite", new Tuple<List<Contact>, int>(next20Contacts, count + 5));
+            }
+
+            return Content("<tbody><tr><td>No more items</td></tr></tbody>");
         }
     }
 }
