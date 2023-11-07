@@ -1,0 +1,33 @@
+﻿@{
+    Layout = null;
+}
+@model List<WebApp_htmx.DB.Contact>
+<div class="main">
+    <input type="search"  name="search" placeholder="Begin Typing..." hx-post="/examples/search"
+           hx-trigger="keyup changed delat:500ms, search" 
+           hx-target="#table-id"
+           hx-select="#table-id"/>
+           
+    <table id="table-id">
+        <thead>
+            <tr>
+                <th>First</th>
+                <th>Last</th>
+                <th>Phone</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody id="search-results">
+            @foreach (var contact in Model)
+            {
+                <tr>
+                    <td>@contact.First</td>
+                    <td>@contact.Last</td>
+                    <td>@contact.Phone</td>
+                    <td>@contact.Email
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

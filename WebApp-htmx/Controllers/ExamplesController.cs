@@ -137,5 +137,19 @@ namespace WebApp_htmx.Controllers
         {
             return View("TableRowInput", new Repo().Get(id));
         }
+
+        [Route("/examples/search")]
+        [HttpPost]
+        public IActionResult EditInline(string search)
+        {
+            var contacts = new Repo().GetAll();
+            if (string.IsNullOrEmpty(search))
+            {
+                return View("ActiveSearch", contacts);
+            }
+            contacts = contacts.Where(x => x.First.Contains(search)).ToList();
+            return View("ActiveSearch", contacts);
+
+        }
     }
 }
