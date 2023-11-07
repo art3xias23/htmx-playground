@@ -21,9 +21,7 @@
                     <td>@contact.Phone</td>
                     <td>@contact.Email</td>
                     <td>
-                        <button hx-post="/examples/delete" hx-target=".main" hx-swap="innerHtml" hx-vals='{"id":@contact.Id}'>Delete1</button>
-                        <button hx-delete="/examples/@contact.Id" hx-target=".main" hx-swap="innerHtml" >Delete2</button>
-                        <button hx-get="/examples/edit/@contact.Id" hx-target="closest tr" hx-swap="innerHtml" >Edit</button>
+                        <button hx-get="/examples/edit/@contact.Id" hx-target="closest tr" hx-swap="innerHtml">Edit Record</button>
                     </td>
                 </tr>
             }

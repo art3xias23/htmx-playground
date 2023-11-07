@@ -23,6 +23,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbXBsZXNcRG9nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/kmilchev/Desktop/Tino/Code/Web/htmx-playground/WebApp-htmx/Views/Examples/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbXBsZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/kmilchev/Desktop/Tino/Code/Web/htmx-playground/WebApp-htmx/Views/Examples/Error1.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbXBsZXNcRXJyb3IxLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -41,6 +45,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/kmilchev/Desktop/Tino/Code/Web/htmx-playground/WebApp-htmx/Views/Examples/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbXBsZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kmilchev/Desktop/Tino/Code/Web/htmx-playground/WebApp-htmx/Views/Examples/TableRowCells.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbXBsZXNcVGFibGVSb3dDZWxscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kmilchev/Desktop/Tino/Code/Web/htmx-playground/WebApp-htmx/Views/Examples/TableRowInput.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbXBsZXNcVGFibGVSb3dJbnB1dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/kmilchev/Desktop/Tino/Code/Web/htmx-playground/WebApp-htmx/Views/Home/Index.cshtml]

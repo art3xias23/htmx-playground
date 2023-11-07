@@ -26,6 +26,14 @@ namespace WebApp_htmx.DB
             }
         }
 
+        public void Update(Contact c)
+        {
+            using (var context = new Context())
+            {
+                context.Update(c);
+            }
+        }
+
         public List<Contact> GetAll()
         {
             using (var context = new Context())

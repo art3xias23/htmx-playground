@@ -81,7 +81,7 @@ namespace WebApp_htmx.Controllers
 
         }
 
-        
+
         [Route("/examples/delete")]
         [HttpPost]
         public IActionResult DeleteXvals(int id)
@@ -107,6 +107,35 @@ namespace WebApp_htmx.Controllers
             var contacts = repo.GetAll();
             return View("Delete", contacts);
 
+        }
+
+        [Route("/examples/edit/{id}")]
+        [HttpPut]
+        public IActionResult Edit(int id, string first, string last, long phone, string email)
+        {
+            var repo = new Repo();
+            var contact = repo.Get(id);
+            contact.First = first;
+            contact.Last = last;
+            contact.Phone = phone;
+            contact.Email = email;
+            repo.Update(contact);
+            return View("Edit", repo.GetAll());
+
+        }
+
+        [Route("/examples/edit")]
+        [HttpGet]
+        public IActionResult Edit()
+        {
+            return View("Edit", new Repo().GetAll());
+        }
+
+        [Route("/examples/edit/{id}")]
+        [HttpGet]
+        public IActionResult EditInline(int id)
+        {
+            return View("TableRowInput", new Repo().Get(id));
         }
     }
 }
