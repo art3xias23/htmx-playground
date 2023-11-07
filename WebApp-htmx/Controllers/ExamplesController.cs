@@ -38,11 +38,8 @@ namespace WebApp_htmx.Controllers
             {
                 return View("Error1");
             }
-            else
-            {
 
-                return null;
-            }
+            return null;
         }
 
         [Route("/examples/more")]
@@ -51,9 +48,7 @@ namespace WebApp_htmx.Controllers
         {
             var repo = new Repo();
             var next20Contacts = repo.GetAll().Skip(count).Take(10).ToList();
-            return PartialView("Get", next20Contacts);
-
-
+            return View("GetMore", new Tuple<List<Contact>, int>(next20Contacts, count+10));
         }
     }
 }

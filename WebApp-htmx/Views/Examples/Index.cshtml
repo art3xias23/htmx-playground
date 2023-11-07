@@ -41,8 +41,8 @@
         <h2>7. Load More contacts with headers</h2>
         <button hx-get="/examples/more" hx-swap="beforebegin" >Load More Contacts</button>
     </div>
-    <div class="my-box">
+    <div id="my-box-8" class="my-box">
         <h2>8. Load More contacts without headers</h2>
-        <button hx-get="/examples/more" hx-swap="beforebegin" hx-select="tbody> tr">Load More Contacts</button>
+        <button hx-get="/examples/more?count=0" hx-target="#my-box-8" hx-select=".main">Start loading more contacts</button>
     </div>
 </div>
