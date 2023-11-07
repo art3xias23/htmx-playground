@@ -1,3 +1,5 @@
-*/bin/*
-*/Debug/*
-*/.vs/*
+**/bin/*
+**/Debug/*
+**/.vs/*
+**/mydatabase.db-shm
+**/mydatabase.db-val
