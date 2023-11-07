@@ -13,7 +13,16 @@ namespace WebApp_htmx.DB
         {
             using (var context = new Context())
             {
-                var items = context.Contacts.Add(c);
+                 context.Contacts.Add(c);
+                 context.SaveChanges();
+            }
+        }
+
+        public Contact Get(int id)
+        {
+            using (var context = new Context())
+            {
+                return context.Contacts.First(x=>x.Id == id);
             }
         }
 
@@ -21,8 +30,17 @@ namespace WebApp_htmx.DB
         {
             using (var context = new Context())
             {
-
                 return context.Contacts.ToList();
+            }
+        }
+
+        public void Delete(int id)
+        {
+            using (var context = new Context())
+            {
+                
+                context.Remove(Get(id));
+                context.SaveChanges();
             }
         }
     }

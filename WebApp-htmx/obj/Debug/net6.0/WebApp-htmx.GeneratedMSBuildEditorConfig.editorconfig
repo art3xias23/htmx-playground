@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\kmilchev\Desktop\Tino\Code\Web\htmx-playground\WebApp-htmx
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/kmilchev/Desktop/Tino/Code/Web/htmx-playground/WebApp-htmx/Views/Examples/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbXBsZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/kmilchev/Desktop/Tino/Code/Web/htmx-playground/WebApp-htmx/Views/Examples/Dog.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbXBsZXNcRG9nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
