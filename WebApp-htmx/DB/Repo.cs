@@ -31,6 +31,7 @@ namespace WebApp_htmx.DB
             using (var context = new Context())
             {
                 context.Update(c);
+                context.SaveChanges();
             }
         }
 
