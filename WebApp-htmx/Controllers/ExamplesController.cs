@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Text.RegularExpressions;
+using Microsoft.AspNetCore.Mvc;
 using WebApp_htmx.DB;
 
 namespace WebApp_htmx.Controllers
@@ -32,8 +33,16 @@ namespace WebApp_htmx.Controllers
             var repo = new Repo();
             var contacts = repo.GetAll();
             var contact = contacts.First(x => x.Id == id);
-            contact.Error = "Some Server Error";
-            return View("Error1");
+            var emailRegex = new Regex(@"^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$");
+            if (!emailRegex.IsMatch(contact.Email))
+            {
+                return View("Error1");
+            }
+            else
+            {
+
+                return null;
+            }
         }
 
         [Route("/examples/more")]

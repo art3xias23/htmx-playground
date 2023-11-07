@@ -24,7 +24,7 @@ namespace WebApp_htmx.DB
                         First = "John",
                         Last = "Doe",
                         Phone = 1234567890,
-                        Email = "john@example.com",
+                        Email = "john.com",
                     },
                     new Contact
                     {

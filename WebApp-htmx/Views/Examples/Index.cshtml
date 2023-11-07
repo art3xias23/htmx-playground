@@ -38,7 +38,11 @@
         <button hx-get="/examples/get">Show Contacts</button>
     </div>
     <div class="my-box">
-        <h2>7. Load More contacts</h2>
+        <h2>7. Load More contacts with headers</h2>
+        <button hx-get="/examples/more" hx-swap="beforebegin" >Load More Contacts</button>
+    </div>
+    <div class="my-box">
+        <h2>8. Load More contacts without headers</h2>
         <button hx-get="/examples/more" hx-swap="beforebegin" hx-select="tbody> tr">Load More Contacts</button>
     </div>
 </div>
