@@ -11,12 +11,7 @@
   - "A hypermedia control is an element in a hypermedia that describes (or
     controls) some sort of interaction, often with a remote server, by encoding
     information about that interaction directly and completely within itself."
-
-`{ (1)
-  "id": 42, (2)
-  "email" : "json-example@example.org" (3)
-}`
-
+    
 # How SPAs(Single Page Applications) operate
 
 - The JavaScript code above converts the JSON text received from the server into a JavaScript object by calling the json() method on it. This new JavaScript object is then handed off to the updateUI() method.
@@ -137,7 +132,7 @@ items communicate via plain json data.
 ## Hypermedia Clients
 - A good client is required to handle the hypermedia coming back from the
     server.
-- ~~Building a good hypermedia client is hard!~~
+- Building a good hypermedia client is hard!
 
 ## REST
 ### Constraints
@@ -153,34 +148,9 @@ items communicate via plain json data.
           data" like an HTTP method or response code)
     4.3 Self-Descriptive Messages
       - all information necessary to both display and also operate on the data being represented must be present in the response
-`{
-  "name": "Joe Smith",
-  "email": "joe@example.org",
-  "status": "Active"
-}`
 
-In the above case the clients needs to know exactly what each one of the items
-is an how to display them.
 
-`
-<html lang="en">
-<body>
-<h1>Joe Smith</h1>
-<div>
-    <div>Email: joe@example.bar</div>
-    <div>Status: Active</div>
-</div>
-<p>
-    <a href="/contacts/42/archive">Archive</a>
-</p>
-</body>
-</html>
-`
-
-In the above example the client only needs to be able to display the hypermedia
-controls. It does need to know what a contact is at all.
-
-4.4 HATEOAS (Hypermedia As The Engine of Application State)
+    4.4 HATEOAS (Hypermedia As The Engine of Application State)
         - The important point to notice here is that, by virtue of being a self-describing message, the HTML response now shows that the “Archive” operation is no longer available, and a new “Unarchive” operation has become available. The HTML representation of the contact encodes the state of the application; it encodes exactly what can and cannot be done with this particular representation, in a way that the JSON representation does not.
 
 5. Layered System constraint
@@ -204,14 +174,7 @@ document (a.k.a *_transclusion_*)
 
 # HTMX Cheatsheet
 - Example script for installing
-`
-<head>
-<script src="https://unpkg.com/htmx.org@1.9.2"
-        integrity="sha384-L6OqL9pRWyyFU3+/bjdSri+iIphTN/bvYyM37tICVyOJkWZLpP2vGn6VUEXgzg6h"
-        crossorigin="anonymous"></script>
 
-</head>
-`
 |--------------|----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
 | Example      | htmx syntax                                              | Explanation                                                                                                     |
 |--------------|----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
@@ -266,8 +229,8 @@ document (a.k.a *_transclusion_*)
 | hx-indicator | hx-indicator="#spinner"                                  | Will point to an element with id spinner which will show while the request is in progress                       |
 |--------------|----------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
 
-Articles Read: 
-https://www.matuzo.at/blog/2023/single-page-applications-criticism
-https://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven#div-comment-724
-https://techblog.commercetools.com/graphql-and-rest-level-3-hateoas-70904ff1f9cf
-https://infrequently.org/2023/02/the-market-for-lemons/
+**Related Articles**  
+[Single Page Application Criticism](https://www.matuzo.at/blog/2023/single-page-applications-criticism)  
+[REST Apis should be hypertext](https://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven#div-comment-724)  
+[Rest LEVEL 3 HATEAOS](https://techblog.commercetools.com/graphql-and-rest-level-3-hateoas-70904ff1f9cf)  
+[Market for Lemons](https://infrequently.org/2023/02/the-market-for-lemons/)  
