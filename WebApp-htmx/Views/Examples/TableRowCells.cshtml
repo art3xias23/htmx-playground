@@ -1,0 +1,12 @@
+﻿@{
+    Layout = null;}
+@model WebApp_htmx.DB.Contact
+<tr >
+    <td>@Model.First</td>
+    <td>@Model.Last</td>
+    <td>@Model.Phone</td>
+    <td>@Model.Email</td>
+    <td colspan="5" style="text-align: center">
+        <button hx-get="/examples/edit/@Model" hx-target="closest tr" hx-swap="outerHtml">Edit</button>
+    </td>
+</tr>

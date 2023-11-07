@@ -1,0 +1,14 @@
+﻿@{
+    Layout = null;
+}
+@model WebApp_htmx.DB.Contact
+
+<div>
+    <form hx-put="/examples/edit/@Model.Id">
+        <input type="text" name="first" value=@Model.First />
+        <input type="text" name="last" value=@Model.Last />
+        <input type="number" name="phone" value=@Model.Phone />
+        <input type="email" name="email" value=@Model.Phone />
+        <button>Update</button>
+    </form>
+</div>
