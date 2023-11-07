@@ -21,7 +21,8 @@
                     <td>@contact.Phone</td>
                     <td>@contact.Email</td>
                     <td>
-                        <button name="id" hx-post="/examples/delete" hx-target=".main" hx-swap="innerHtml" hx-vals='{"id":@contact.Id}'>Delete</button>
+                        <button hx-post="/examples/delete" hx-target=".main" hx-swap="innerHtml" hx-vals='{"id":@contact.Id}'>Delete with hx-vals</button>
+                        <button hx-delete="/examples/@contact.Id" hx-target=".main" hx-swap="innerHtml" >Delete with plain post</button>
                     </td>
                 </tr>
             }

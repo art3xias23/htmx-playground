@@ -84,6 +84,19 @@ namespace WebApp_htmx.Controllers
         
         [Route("/examples/delete")]
         [HttpPost]
+        public IActionResult DeleteXvals(int id)
+        {
+            var repo = new Repo();
+            if (id > 0)
+            {
+                repo.Delete(id);
+            }
+            var contacts = repo.GetAll();
+            return View("Delete", contacts);
+
+        }
+        [Route("/examples/{id}")]
+        [HttpDelete]
         public IActionResult DeletePost(int id)
         {
             var repo = new Repo();
