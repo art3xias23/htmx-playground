@@ -1,0 +1,58 @@
+﻿<div id="replace-me">
+    <div class="my-box" id="my-box-11">
+        <h2>11. Edit a contact</h2>
+        <button hx-get="/examples/edit" hx-target="#my-box-11">Edit a Contact</button>
+    </div>
+    <div class="my-box" id="my-box-10">
+        <h2>10. Delete</h2>
+        <button hx-get="/examples/delete/0" hx-target="#my-box-10">Delete a Contact</button>
+    </div>
+    <div class="my-box" id="my-box-9">
+        <h2>9. Infinite Scroll</h2>
+        <button hx-get="/examples/infinite" hx-target="#my-box-9" hx-select=".main">Start infinite contact scroll</button>
+    </div>
+    <div id="my-box-8" class="my-box">
+        <h2>8. Load More contacts without headers</h2>
+        <button hx-get="/examples/more?count=0" hx-target="#my-box-8" hx-select=".main">Start loading more contacts</button>
+    </div>
+    <div class="my-box">
+        <h2>7. Load More contacts with headers</h2>
+        <button hx-get="/examples/more" hx-swap="beforebegin" >Load More Contacts</button>
+    </div>
+
+    <div class="my-box">
+        <h2>6. Email Validation Server Side</h2>
+        <button hx-get="/examples/get">Show Contacts</button>
+    </div>
+
+    <div class="my-box">
+        <h2>5. Get contacts, Replace page (Outer Html), Keep History</h2>
+        <p>
+            Same use of hx-get, however replacing entire page instead of just element.
+            Keeping History.
+            However, the Layout will NOT be copied as we are replacing Outer HTML
+        </p>
+        <button hx-get="/examples/get" hx-target="#replace-me" hx-url-push="true" hx-swap="outerHtml">Get Contacts</button>
+    </div>
+    <div class="my-box">
+        <h2>4. Get contacts, Replace page (Inner Html), Keep History</h2>
+        <p>Same use of hx-get, however replacing entire page instead of just element. Keeping History. However, the Layout will be copied as we are replacing only the Inner HTML</p>
+        <button hx-get="/examples/get" hx-target="#replace-me" hx-url-push="true" hx-swap="innerHtml">Get Contacts</button>
+    </div>
+
+    <div class="my-box">
+        <h2>3. Get contacts, Replace page, Keep History</h2>
+        <p>Same use of hx-get, however replacing entire page instead of just element. Keeping History.</p>
+        <button hx-get="/examples/get" hx-target="#replace-me" hx-url-push="true">Get Contacts</button>
+    </div>
+    <div class="my-box">
+        <h2>2. Get contacts Replace page</h2>
+        <p>Same use of hx-get, however replacing entire page instead of just element.</p>
+        <button hx-get="/examples/get" hx-target="#replace-me" hx-swap="outerHtml">Get Contacts</button>
+    </div>
+    <div class="my-box">
+        <h2>1. Get contacts Replace button</h2>
+        <p>Simple use of the hx-get attribute. It replaces the button element (transclusion)</p>
+        <button hx-get="/examples/get" n>Get Contacts</button>
+    </div>
+</div>
