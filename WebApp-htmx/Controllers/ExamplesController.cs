@@ -140,13 +140,15 @@ namespace WebApp_htmx.Controllers
 
         [Route("/examples/search")]
         [HttpPost]
-        public IActionResult EditInline(string search)
+        public async Task<IActionResult> EditInline(string search)
         {
             var contacts = new Repo().GetAll();
             if (string.IsNullOrEmpty(search))
             {
                 return View("ActiveSearch", contacts);
             }
+
+            await Task.Delay(2000);
             contacts = contacts.Where(x => x.First.Contains(search)).ToList();
             return View("ActiveSearch", contacts);
 

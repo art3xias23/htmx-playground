@@ -6,8 +6,10 @@
     <input type="search"  name="search" placeholder="Begin Typing..." hx-post="/examples/search"
            hx-trigger="keyup changed delat:500ms, search" 
            hx-target="#table-id"
-           hx-select="#table-id"/>
-           
+           hx-select="#table-id"
+           hx-indicator="#spinner"/>
+    <img src="lib/img/spinner.gif" id="spinner" class="htmx-indicator" width="50" height="50" alt="Loading"/>
+
     <table id="table-id">
         <thead>
             <tr>
