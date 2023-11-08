@@ -26,6 +26,14 @@ namespace WebApp_htmx.DB
             }
         }
 
+        public List<Contact> GetList(int[] ids)
+        {
+            using (var context = new Context())
+            {
+                return context.Contacts.Where((x=> ids.Contains(x.Id))).ToList();
+            }
+        }
+
         public void Update(Contact c)
         {
             using (var context = new Context())
@@ -49,6 +57,15 @@ namespace WebApp_htmx.DB
             {
                 
                 context.Remove(Get(id));
+                context.SaveChanges();
+            }
+        }
+        public void DeleteRange(int[] ids)
+        {
+            using (var context = new Context())
+            {
+                var items = GetList(ids); 
+                context.RemoveRange(items);
                 context.SaveChanges();
             }
         }

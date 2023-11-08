@@ -1,0 +1,33 @@
+﻿@{
+    Layout = null;
+}
+@model List<WebApp_htmx.DB.Contact>
+<div class="main">
+    <form>
+        <table>
+            <thead>
+                <tr>
+                    <th>First</th>
+                    <th>Last</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var contact in Model)
+                {
+                    <tr>
+                        <td>@contact.First</td>
+                        <td>@contact.Last</td>
+                        <td>@contact.Phone</td>
+                        <td>@contact.Email</td>
+                        <td>
+                            <input type="checkbox" name="selection_ids_delete" value="@contact.Id" />
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <button hx-delete="/examples/bulkdelete" hx-target=".main" hx-confirm="Are you sure about deleting?">Delete selected contacts</button>
+    </form>
+</div>

@@ -169,5 +169,23 @@ namespace WebApp_htmx.Controllers
             await Task.Delay(4000);
             return $"Total Contacts: {contacts.Count}";
         }
+
+        [Route("/examples/bulkdelete")]
+        [HttpDelete]
+        public IActionResult BulkDelete([FromForm] List<int> selection_ids_delete)
+        {
+            var repo = new Repo();
+            repo.DeleteRange(selection_ids_delete.ToArray());
+            var contacts = new Repo().GetAll();
+            return View("DeleteBulk", contacts);
+        }
+
+        [Route("/examples/bulk")]
+        [HttpGet]
+        public IActionResult BulkDelete()
+        {
+            var contacts = new Repo().GetAll();
+            return View("DeleteBulk", contacts);
+        }
     }
 }
