@@ -151,15 +151,23 @@ namespace WebApp_htmx.Controllers
             await Task.Delay(2000);
             contacts = contacts.Where(x => x.First.Contains(search)).ToList();
             return View("ActiveSearch", contacts);
-
         }
 
-        [Route("/example/lazyloading")]
+        [Route("/examples/lazy")]
         [HttpGet]
         public IActionResult LazyLoading()
         {
             var contacts = new Repo().GetAll();
+            return View("LazyLoading", contacts);
+        }
 
+        [Route("/examples/lazy/count")]
+        [HttpGet]
+        public async Task<string> LazyLoadingCount()
+        {
+            var contacts = new Repo().GetAll();
+            await Task.Delay(4000);
+            return $"Total Contacts: {contacts.Count}";
         }
     }
 }

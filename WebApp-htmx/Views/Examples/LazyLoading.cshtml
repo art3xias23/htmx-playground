@@ -1,34 +1,37 @@
 ﻿@{
     Layout = null;
 }
-@model Tuple<List<WebApp_htmx.DB.Contact>, int>
+@model List<WebApp_htmx.DB.Contact>
 <div class="main">
     <table>
         <thead>
-            <tr>
-                <th>First</th>
-                <th>Last</th>
-                <th>Phone</th>
-                <th>Email</th>
-            </tr>
+        <tr>
+            <th>First</th>
+            <th>Last</th>
+            <th>Phone</th>
+            <th>Email</th>
+        </tr>
         </thead>
         <tbody>
-            @foreach (var contact in Model.Item1)
-            {
-                <tr>
-                    <td>@contact.First</td>
-                    <td>@contact.Last</td>
-                    <td>@contact.Phone</td>
-                    <td>
-                        <input name="email" id="email"
+        @foreach (var contact in Model)
+        {
+            <tr>
+                <td>@contact.First</td>
+                <td>@contact.Last</td>
+                <td>@contact.Phone</td>
+                <td>
+                    <input name="email" id="email"
                            hx-get="/examples/@contact.Id/email"
                            hx-target="#error"
                            hx-trigger="change, keyup"
                            value="@contact.Email" />
-                        <span id="error">@contact.Error</span>
-                    </td>
-                </tr>
-            }
+                    <span id="error">@contact.Error</span>
+                </td>
+            </tr>
+        }
         </tbody>
     </table>
+    <button>Add Contact(dummy)</button>
+    <p hx-get="/examples/lazy/count" hx-trigger="load" hx-indicator="#spinner">Loading count...</p>
+    <img id="spinner" class="htmx-indicator" src="lib/img/spinner.png" width="50" height="50" alt="Image missing"/>
 </div>
