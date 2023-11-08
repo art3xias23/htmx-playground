@@ -1,0 +1,34 @@
+﻿@{
+    Layout = null;
+}
+@model Tuple<List<WebApp_htmx.DB.Contact>, int>
+<div class="main">
+    <table>
+        <thead>
+            <tr>
+                <th>First</th>
+                <th>Last</th>
+                <th>Phone</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var contact in Model.Item1)
+            {
+                <tr>
+                    <td>@contact.First</td>
+                    <td>@contact.Last</td>
+                    <td>@contact.Phone</td>
+                    <td>
+                        <input name="email" id="email"
+                           hx-get="/examples/@contact.Id/email"
+                           hx-target="#error"
+                           hx-trigger="change, keyup"
+                           value="@contact.Email" />
+                        <span id="error">@contact.Error</span>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

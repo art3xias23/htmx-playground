@@ -153,5 +153,13 @@ namespace WebApp_htmx.Controllers
             return View("ActiveSearch", contacts);
 
         }
+
+        [Route("/example/lazyloading")]
+        [HttpGet]
+        public IActionResult LazyLoading()
+        {
+            var contacts = new Repo().GetAll();
+
+        }
     }
 }
